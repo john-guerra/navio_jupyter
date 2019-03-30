@@ -1,0 +1,41 @@
+{
+  "name": "navio-jupyter",
+  "version": "0.0.1",
+  "description": "A Custom Jupyter Widget Library",
+  "author": "John Alexis Guerra Gomez",
+  "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com//navio_jupyter.git"
+  },
+  "keywords": [
+    "jupyter",
+    "widgets",
+    "ipython",
+    "ipywidgets",
+    "jupyterlab-extension"
+  ],
+  "files": [
+    "lib/**/*.js",
+    "dist/*.js"
+  ],
+  "scripts": {
+    "clean": "rimraf dist/",
+    "prepublish": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "prettier": "^1.16.4",
+    "rimraf": "^2.6.1",
+    "webpack": "^3.5.5"
+  },
+  "dependencies": {
+    "@jupyter-widgets/base": "^1.0.0",
+    "lodash": "^4.17.4",
+    "navio": "0.0.38"
+  },
+  "jupyterlab": {
+    "extension": "lib/labplugin"
+  }
+}

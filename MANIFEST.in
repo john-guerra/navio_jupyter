@@ -1,0 +1,2 @@
+recursive-include navio_jupyter/static *.*
+include navio-jupyter.json
