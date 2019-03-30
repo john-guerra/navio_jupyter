@@ -1,12 +1,12 @@
 {
   "name": "navio-jupyter",
   "version": "0.0.1",
-  "description": "A Custom Jupyter Widget Library",
+  "description": "A Jupyter notebook widget for navio for visualizing, summarizing and exploring data",
   "author": "John Alexis Guerra Gomez",
   "main": "lib/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com//navio_jupyter.git"
+    "url": "https://github.com/john-guerra/navio_jupyter.git"
   },
   "keywords": [
     "jupyter",

@@ -22,7 +22,7 @@ log.set_verbosity(log.DEBUG)
 log.info('setup.py entered')
 log.info('$PATH=%s' % os.environ['PATH'])
 
-LONG_DESCRIPTION = 'A Custom Jupyter Widget Library'
+LONG_DESCRIPTION = 'A Jupyter notebook widget for navio for visualizing, summarizing and exploring data'
 
 def js_prerelease(command, strict=False):
     """decorator for building minified js/css prior to another command"""
@@ -80,9 +80,9 @@ class NPM(Command):
         npmName = 'npm';
         if platform.system() == 'Windows':
             npmName = 'npm.cmd';
-            
+
         return npmName;
-    
+
     def has_npm(self):
         npmName = self.get_npm_name();
         try:
@@ -152,7 +152,7 @@ setup_args = {
 
     'author': 'John Alexis Guerra Gomez',
     'author_email': 'duto_guerra@hotmail.com',
-    'url': 'https://github.com//navio_jupyter',
+    'url': 'https://github.com/john-guerra/navio_jupyter',
     'keywords': [
         'ipython',
         'jupyter',
