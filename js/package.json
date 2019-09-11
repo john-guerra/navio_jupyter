@@ -32,7 +32,7 @@
   },
   "dependencies": {
     "@jupyter-widgets/base": "^1.0.0",
-    "lodash": "^4.17.4",
+    "lodash": "^4.17.15",
     "navio": "0.0.38"
   },
   "jupyterlab": {
