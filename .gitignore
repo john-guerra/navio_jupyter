@@ -1,12 +1,9 @@
-*.egg-info/
-.ipynb_checkpoints/
-dist/
-build/
-*.py[cod]
-node_modules/
+node_modules
+.venv
+dist
 
-# Compiled javascript
-navio_jupyter/static/
+# Python
+__pycache__
+.ipynb_checkpoints
 
-# OS X
-.DS_Store
+src/navio_jupyter/static

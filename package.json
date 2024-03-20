@@ -1,0 +1,12 @@
+{
+	"scripts": {
+		"dev": "npm run build -- --sourcemap=inline --watch",
+		"build": "esbuild js/widget.js --minify --format=esm --bundle --outdir=src/navio_jupyter/static"
+	},
+	"dependencies": {
+		"navio": "^0.0.75"
+	},
+	"devDependencies": {
+		"esbuild": "^0.20.0"
+	}
+}
