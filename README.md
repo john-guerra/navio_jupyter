@@ -1,21 +1,31 @@
-navio_jupyter
-===============================
+# navio_jupyter
 
-A Custom Jupyter Widget Library
+A jupyter lab anywidget for navio.dev, the widget for visualizing and exploring large multi-dimensional data.
 
-Installation
-------------
+## Installation
 
-To install use pip:
+```sh
+pip install navio_jupyter
+```
 
-    $ pip install navio_jupyter
-    $ jupyter nbextension enable --py --sys-prefix navio_jupyter
+## Development installation
 
+Create a virtual environment and and install navio_jupyter in *editable* mode with the
+optional development dependencies:
 
-For a development installation (requires npm),
+```sh
+python -m venv .venv
+source .venv/bin/activate
+pip install -e ".[dev]"
+```
 
-    $ git clone https://github.com//navio_jupyter.git
-    $ cd navio_jupyter
-    $ pip install -e .
-    $ jupyter nbextension install --py --symlink --sys-prefix navio_jupyter
-    $ jupyter nbextension enable --py --sys-prefix navio_jupyter
+You then need to install the JavaScript dependencies and run the development server.
+
+```sh
+npm install
+npm run dev
+```
+
+All is set to open `example.ipynb` in JupyterLab, VS Code, or your favorite editor
+to start developing. Any change made in the `js` folder will be directly reflected
+in the notebook.
